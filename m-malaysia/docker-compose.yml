@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  m-malaysia-fe:
+    image: evolza/seaminds-fe-test
+    container_name: m-malaysia-fe
+    ports:
+      - "3020:80"

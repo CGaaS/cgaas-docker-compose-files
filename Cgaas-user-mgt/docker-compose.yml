@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+ cgaas-user-mgt-test:
+    image: evolza/cgaas-user-mgt-test
+    container_name: cgaas-user-mgt-test
+    ports:
+      - "7052:3000"

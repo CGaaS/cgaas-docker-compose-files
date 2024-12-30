@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  m-malaysia-be:
+    image: evolza/seafarermgt-demo
+    container_name: m-malaysia-be
+    ports:
+      - "3021:8888"

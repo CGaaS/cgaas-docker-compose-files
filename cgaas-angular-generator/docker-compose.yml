@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  cgaas-angular-generator:
+    image: evolza/cgaas-angular-generator-new-theme:release-v1.4.3.1.1
+    container_name: cgaas-angular-generator
+    ports:
+      - "3005:3005"

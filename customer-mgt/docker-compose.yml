@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  customermgt:
+    image: evolza/customermgt
+    container_name: customermgt
+    ports:
+      - "3015:8888"

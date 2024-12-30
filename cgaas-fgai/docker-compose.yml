@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  cgaas-fgai:
+    image: evolza/cgaas-fgai-new:release-v1.4.3
+    container_name: cgaas-fgai
+    ports:
+      - "3003:8000"

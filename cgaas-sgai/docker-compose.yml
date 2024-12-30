@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  cgaas-sgai:
+    image: evolza/sgai
+    container_name: cgaas-sgai
+    ports:
+      - "3017:8888"

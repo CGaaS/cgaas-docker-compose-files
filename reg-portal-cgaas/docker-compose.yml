@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  cgaas-registration-portal:
+    image: evolza/cgaas-registration-portal
+    container_name: cgaas-registration-portal
+    ports:
+      - "7856:80"

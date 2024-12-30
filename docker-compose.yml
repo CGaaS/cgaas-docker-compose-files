@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  m-malaysia:
+    image: evolza/m-malaysia-fe
+    container_name: EvoGateWayManager
+    ports:
+      - "3020:80"

@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  cgaas-ui-test:
+    image: evolza/cgaas-ui-test
+    container_name: cgaas-ui-test
+    ports:
+      - "3032:3011"

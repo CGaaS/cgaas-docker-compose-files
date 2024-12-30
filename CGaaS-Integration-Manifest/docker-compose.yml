@@ -1,0 +1,6 @@
+services:
+ cgaas-integration-manifest:
+    image: evolza/cgaas-integration-manifest
+    container_name: cgaas-integration-manifest
+    ports:
+      - "3020:8099"

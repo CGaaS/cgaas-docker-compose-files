@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  e-wms-portal-be:
+    image: evolza/e-wms-be
+    container_name: e-wms-portal-be
+    ports:
+      - "3011:8000"

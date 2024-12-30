@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  cgaas-cbfg:
+    image: evolza/cgaas-cbfg-prod
+    container_name: cgaas-cbfg
+    ports:
+      - "3004:8000"
+

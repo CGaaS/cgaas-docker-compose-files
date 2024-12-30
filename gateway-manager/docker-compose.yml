@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  cgaas-apigwm:
+    image: evolza/cgaas-gateway
+    container_name: cgaas-apigwm
+    ports:
+      - "3008:9000"
+

@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  git-mgt:
+    image: evolza/git-mgt
+    container_name: git-mgt
+    ports:
+      - "3016:8888"

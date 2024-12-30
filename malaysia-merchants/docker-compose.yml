@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  seaminds-merchants-malaysia:
+    image: evolza/seaminds-merchants-test
+    container_name: m-malaysia-merchnats
+    ports:
+      - "3022:8889"

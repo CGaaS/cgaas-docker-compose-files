@@ -1,0 +1,6 @@
+services:
+ projectmanagement:
+    image: evolza/projectmanagement-app258
+    container_name: projectmanagement
+    ports:
+      - "5290:8888"

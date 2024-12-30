@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  cgaas-logger:
+    image: evolza/cgaas-logger
+    container_name: cgaas-logger
+    ports:
+      - "3025:3001"

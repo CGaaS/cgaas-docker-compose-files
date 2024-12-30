@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  cgaas-generator:
+    image: evolza/cgaas-new-generator:release-v1.4.3
+    container_name: cgaas-generator
+    ports:
+      - "3001:3002"

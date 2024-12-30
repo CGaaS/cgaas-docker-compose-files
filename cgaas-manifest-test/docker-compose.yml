@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  cgaas-manifest-test:
+    image: evolza/cgaas-manifest-test
+    container_name: cgaas-cgaas-test
+    ports:
+      - "3030:9090"

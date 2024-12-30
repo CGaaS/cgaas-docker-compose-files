@@ -1,0 +1,6 @@
+services:
+ sltcustomermgt:
+    image: evolza/sltcustomermgt-ws148
+    container_name: sltcustomermgt
+    ports:
+      - "5232:80"

@@ -1,0 +1,6 @@
+services:
+ workflowmanager:
+    image: evolza/workflowmanager-app195:release-1.0
+    container_name: workflowmanager-app
+    ports:
+      - "3025:8889"

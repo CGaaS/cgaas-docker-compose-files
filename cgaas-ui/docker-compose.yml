@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  react-ui:
+    image: evolza/cgaas-ui-new:release-v1.4.3.1.1
+    container_name: react-ui
+    ports:
+      - "3000:3011"

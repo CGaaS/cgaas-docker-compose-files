@@ -1,0 +1,6 @@
+services:
+ cgaas-angular-generator-new-theme:
+    image: evolza/cgaas-angular-generator-new-theme
+    container_name: cgaas-angular-generator-new-theme
+    ports:
+      - "5299:3005"

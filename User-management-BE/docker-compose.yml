@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  User-management-BE:
+    image: evolza/usermanagement-portal-be
+    container_name: user-management-BE
+    ports:
+      - "3030:8888"

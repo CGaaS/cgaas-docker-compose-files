@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "0891faea-a4ef-4f4c-a2c2-93dbf2e7465a",
+		"name": "CSA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26315859",
+		"_collection_link": "https://dark-moon-845394.postman.co/workspace/Team-Workspace~2af179b3-3ffe-4212-83ae-44f12564db20/collection/26315859-0891faea-a4ef-4f4c-a2c2-93dbf2e7465a?action=share&source=collection_link&creator=26315859"
+	},
+	"item": [
+		{
+			"name": "create patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patientId\":\"ABCD\",\r\n  \"firstName\": \"Akila\",\r\n  \"lastName\": \"Gamage\",\r\n  \"phoneNumber\": \"+94711420071\",\r\n  \"address\": \"Homagama, Wattala\",\r\n  \"history\": \"shape\",\r\n  \"currentStatus\": \"healhy\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/healthapp/rest/patients"
+			},
+			"response": []
+		},
+		{
+			"name": "FInd All Patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/healthapp/rest/patients"
+			},
+			"response": []
+		},
+		{
+			"name": "update patient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patientId\":\"ABCD\",\r\n  \"firstName\": \"Akila\",\r\n  \"lastName\": \"Gamage\",\r\n  \"phoneNumber\": \"+94711420071\",\r\n  \"address\": \"Homagama, Wattala\",\r\n  \"history\": \"shape(u[dated)\",\r\n  \"currentStatus\": \"healhy\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/healthapp/rest/patients/1"
+			},
+			"response": []
+		},
+		{
+			"name": "delete patient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/healthapp/rest/patients/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/healthapp/rest/patients/3"
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll Doctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/healthapp/rest/doctors"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Doctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/healthapp/rest/doctors"
+			},
+			"response": []
+		},
+		{
+			"name": "Find Doctor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/healthapp/rest/doctors/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Doctor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Chaminda\",\r\n    \"lastName\": \"Diwakara(Updated)\",\r\n    \"phoneNumber\": \"071772271\",\r\n    \"address\": \"Kaduwela\",\r\n    \"doctorId\": \"D001\",\r\n    \"specialization\": \"Pathology\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/healthapp/rest/doctors/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Doctor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/healthapp/rest/doctors/3"
+			},
+			"response": []
+		},
+		{
+			"name": "get all appointments",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create appointments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentId\": \"A001\",\r\n    \"doctorId\": \"D001\",\r\n    \"patientId\": \"P001\",\r\n    \"doctorName\": \"Dr. John Doe\",\r\n    \"patientName\": \"Jane Doe\",\r\n    \"dateTime\": \"2022-05-01T10:00:00\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/healthapp/rest/appointments"
+			},
+			"response": []
+		},
+		{
+			"name": "Find Appointment by Patientid",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Find Appointment by Doctor Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Appointment",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Appointments",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get all medical records",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Medical Records",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get all prescriptions",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create prescription",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patientName\": \"John Doe\",\r\n    \"doctorName\": \"Dr. Smith\",\r\n    \"dateTime\": \"2024-05-01T08:00:00\",\r\n    \"diagnosis\": \"Influenza\",\r\n    \"medications\": {\r\n        \"medication1\": \"Take once daily\",\r\n        \"medication2\": \"Take twice daily\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/healthapp/rest/prescription"
+			},
+			"response": []
+		},
+		{
+			"name": "get prescription by patient name",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get all medical records",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create medical record",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get medical record by name",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create billing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"B001\",\r\n    \"patientId\": \"P001\",\r\n    \"amount\": 100.0,\r\n    \"paid\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/healthapp/rest/billing"
+			},
+			"response": []
+		},
+		{
+			"name": "get all billing",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get billing by patient id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get doctor by doctor id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get doctor by doc name",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get doctor by specialisation",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get patient by patient Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get patient by patient name",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

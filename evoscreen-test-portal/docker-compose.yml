@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  evoscreen-test-portal:
+    image: evolza/evoscreen-portal
+    container_name: evoscreen-test-portal
+    ports:
+      - "3009:80"

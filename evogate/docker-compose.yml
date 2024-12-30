@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  EvoGate:
+    image: evolza/evogate
+    container_name: EvoGate
+    ports:
+      - "3007:9070"

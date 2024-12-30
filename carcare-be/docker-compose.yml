@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  carcare-be:
+    image: evolza/carcare-udawaththa
+    container_name: carcare-be
+    ports:
+      - "3014:8080"

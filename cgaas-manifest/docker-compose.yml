@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  cgaas-manifest:
+    image: evolza/cgaas-manifest:release-v1.4.3
+    container_name: cgaas-manifest
+    ports:
+      - "3002:9090"

@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  cgaas-generator-test:
+    image: evolza/cgaas-generator-test
+    container_name: cgaas-generator-test
+    ports:
+      - "3031:3002"
